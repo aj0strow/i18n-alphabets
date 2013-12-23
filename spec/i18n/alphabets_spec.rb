@@ -26,4 +26,12 @@ describe I18n::Alphabets do
     }
   end
   
+  describe '#aa' do
+    subject { alphabets.aa }
+    include_examples 'alphabet', %w{
+      A a	B b	T t	S s	E e	C c	K k	X x	I i	D d	Q q
+      R r	F f	G g	O o	L l	M m	N n	U u	W w	H h	Y y
+    }
+  end
+  
 end

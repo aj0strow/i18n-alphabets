@@ -15,5 +15,12 @@ module I18n
       }.to_set
     end
     
+    def aa
+      %w{
+        A a	B b	T t	S s	E e	C c	K k	X x	I i	D d	Q q
+        R r	F f	G g	O o	L l	M m	N n	U u	W w	H h	Y y
+      }.to_set
+    end
+    
   end
 end
