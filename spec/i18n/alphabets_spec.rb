@@ -155,4 +155,11 @@ describe I18n::Alphabets do
       \u10B3A \u10B3B \u10B3C \u10B3D \u10B3E \u10B3F
     }
   end
+  
+  describe '#ay' do
+    subject { alphabets.ay }
+    include_examples 'alphabet', %W{
+      a i u ä ï ü c h j k l m n ñ p q r s t w x y
+    }
+  end
 end

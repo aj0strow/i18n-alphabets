@@ -173,5 +173,12 @@ module I18n
       }.to_set
     end
     
+    def ay
+      %W{
+        \u0061 \u0069 \u0075 \u00E4 \u00EF \u00FC \u0063 \u0068 \u006A \u006B \u006C \u006D \u006E 
+        \u00F1 \u0070 \u0071 \u0072 \u0073 \u0074 \u0077 \u0078 \u0079
+      }.to_set
+    end
+    
   end
 end
