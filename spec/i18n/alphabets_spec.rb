@@ -60,8 +60,8 @@ describe I18n::Alphabets do
   describe '#sq' do
     subject { alphabets.sq }
     include_examples 'alphabet', %w{
-      A B C Ç D Dh E Ë F G Gj H I J K L Ll M N Nj O P Q R Rr S Sh 
-      T Th U V X Xh Y Z Zh
+      A B C Ç D E Ë F G H h I J j K L l M N O P Q R r S
+      T U V X Y Z
     }
   end
   
