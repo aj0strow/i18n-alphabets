@@ -105,4 +105,12 @@ describe I18n::Alphabets do
       \u0642 \u0643 \u0644 \u0645 \u0646 \u0647 \u0648 \u064A
     }
   end
+  
+  describe '#an' do
+    subject { alphabets.an }
+    include_examples 'alphabet', %w{
+      A a B b C c D d E e F f G g H h I i J j K k L l M m N n Ñ ñ
+      O o P p Q q R r S s T t U u V v W w X x Y y Z z
+    }
+  end
 end
