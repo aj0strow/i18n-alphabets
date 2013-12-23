@@ -50,4 +50,12 @@ describe I18n::Alphabets do
       N n	O o	P p	Ɛ ɛ	R r	S s	T t	U u	V v	W w	Ɔ ɔ	Y y	Z z
     } 
   end
+  
+  describe '#sq' do
+    subject { alphabets.sq }
+    include_examples 'alphabet', %w{
+      A B C Ç D Dh E Ë F G Gj H I J K L Ll M N Nj O P Q R Rr S Sh 
+      T Th U V X Xh Y Z Zh
+    }
+  end
 end

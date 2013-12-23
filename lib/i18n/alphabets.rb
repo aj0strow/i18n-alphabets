@@ -37,5 +37,12 @@ module I18n
       }.to_set
     end
     
+    def sq
+      %w{
+        A B C Ç D Dh E Ë F G Gj H I J K L Ll M N Nj O P Q R Rr S Sh 
+        T Th U V X Xh Y Z Zh
+      }.to_set
+    end
+    
   end
 end
