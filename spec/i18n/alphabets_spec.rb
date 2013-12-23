@@ -43,4 +43,11 @@ describe I18n::Alphabets do
     }
   end
   
+  describe '#ak' do
+    subject { alphabets.ak }
+    include_examples 'alphabet', %w{
+      A a	B b	C c	D d	E e	F f	G g	H h	I i	J j	K k	L l	M m
+      N n	O o	P p	Ɛ ɛ	R r	S s	T t	U u	V v	W w	Ɔ ɔ	Y y	Z z
+    } 
+  end
 end
