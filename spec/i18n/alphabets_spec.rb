@@ -113,4 +113,34 @@ describe I18n::Alphabets do
       O o P p Q q R r S s T t U u V v W w X x Y y Z z
     }
   end
+  
+  describe '#hy' do
+    subject { alphabets.hy }
+    include_examples 'alphabet', %W{
+      Ա	Բ	Գ	Դ	Ե	Զ	Է	Ը	Թ	Ժ	Ի	Լ	Խ	Ծ	Կ
+      Հ	Ձ	Ղ	Ճ	Մ	Յ	Ն	Շ	Ո	Չ	Պ	Ջ	Ռ	Ս	Վ	Տ
+      Ր	Ց	Ւ	Փ	Ք	Օ	Ֆ	ՙ	՚	՛	՜	՝	՞	՟
+      ա	բ	գ	դ	ե	զ	է	ը	թ	ժ	ի	լ	խ	ծ	կ
+      հ	ձ	ղ	ճ	մ	յ	ն	շ	ո	չ	պ	ջ	ռ	ս	վ	տ
+      ր	ց	ւ	փ	ք	օ	ֆ	և	։	֊	\u058F
+    }
+  end
+  
+  describe '#as' do
+    subject { alphabets.as }
+    include_examples 'alphabet', %W{
+      \u0995 \u0996 \u0997 \u0998 \u0999 \u099A \u099B \u099C \u099D \u099E 
+      \u099F \u09A0 \u09A1 \u09A2 \u09A3 \u09A4 \u09A5 \u09A6 \u09A7 \u09A8 
+      \u09AA \u09AB \u09AC \u09AD \u09AE \u09AF \u09F0 \u09B2 \u09F1 \u09B6 
+      \u09B7 \u09B8 \u09B9
+    }
+  end
+  
+  describe '#av' do
+    subject { alphabets.av }
+    include_examples 'alphabet', %w{
+      А а Б б В в Г г ъ ь I Д д Е е Ё ё Ж ж З з И и Й й К к Л л М м Н н О о 
+      П п Р р С с Т т У у Ф ф Х х Ц ц Ч ч Ш ш Щ щ Ъ Ы ы Ь Э э Ю ю Я я
+    }
+  end
 end
