@@ -143,4 +143,16 @@ describe I18n::Alphabets do
       П п Р р С с Т т У у Ф ф Х х Ц ц Ч ч Ш ш Щ щ Ъ Ы ы Ь Э э Ю ю Я я
     }
   end
+  
+  describe '#ae' do
+    subject { alphabets.ae }
+    include_examples 'alphabet', %W{
+      \u10B00 \u10B01 \u10B02 \u10B03 \u10B04 \u10B05 \u10B06 \u10B07 \u10B08 \u10B09 \u10B0A 
+      \u10B0B \u10B0C \u10B0D \u10B0E \u10B0F \u10B10 \u10B11 \u10B12 \u10B13 \u10B14 \u10B15 
+      \u10B16 \u10B17 \u10B18 \u10B19 \u10B1A \u10B1B \u10B1C \u10B1D \u10B1E \u10B1F \u10B20 
+      \u10B21 \u10B22 \u10B23 \u10B24 \u10B25 \u10B26 \u10B27 \u10B28 \u10B29 \u10B2A \u10B2B 
+      \u10B2C \u10B2D \u10B2E \u10B2F \u10B30 \u10B31 \u10B32 \u10B33 \u10B34 \u10B35 \u10B39 
+      \u10B3A \u10B3B \u10B3C \u10B3D \u10B3E \u10B3F
+    }
+  end
 end

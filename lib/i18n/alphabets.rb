@@ -159,7 +159,18 @@ module I18n
         \u0441 \u0422 \u0442 \u0423 \u0443 \u0424 \u0444 \u0425 \u0445 \u0426 
         \u0446 \u0427 \u0447 \u0428 \u0448 \u0429 \u0449 \u042A \u042B \u044B 
         \u042C \u042D \u044D \u042E \u044E \u042F \u044F
-      }
+      }.to_set
+    end
+    
+    def ae
+      %W{
+        \u10B00 \u10B01 \u10B02 \u10B03 \u10B04 \u10B05 \u10B06 \u10B07 \u10B08 \u10B09 \u10B0A 
+        \u10B0B \u10B0C \u10B0D \u10B0E \u10B0F \u10B10 \u10B11 \u10B12 \u10B13 \u10B14 \u10B15 
+        \u10B16 \u10B17 \u10B18 \u10B19 \u10B1A \u10B1B \u10B1C \u10B1D \u10B1E \u10B1F \u10B20 
+        \u10B21 \u10B22 \u10B23 \u10B24 \u10B25 \u10B26 \u10B27 \u10B28 \u10B29 \u10B2A \u10B2B 
+        \u10B2C \u10B2D \u10B2E \u10B2F \u10B30 \u10B31 \u10B32 \u10B33 \u10B34 \u10B35 \u10B39 
+        \u10B3A \u10B3B \u10B3C \u10B3D \u10B3E \u10B3F
+      }.to_set
     end
     
   end
