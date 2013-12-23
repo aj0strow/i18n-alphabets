@@ -162,4 +162,12 @@ describe I18n::Alphabets do
       a i u ä ï ü c h j k l m n ñ p q r s t w x y
     }
   end
+  
+  describe '#az' do
+    subject { alphabets.az }
+    include_examples 'alphabet', %W{
+      A a B b C c Ç ç D d E e Ə ə F f G g Ğ ğ H h X x I ı İ i J j K k Q q L l M m 
+      N n O o Ö ö P p R r S s Ş ş T t U u Ü ü V v Y y Z z
+    }
+  end
 end
