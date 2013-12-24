@@ -195,4 +195,12 @@ describe I18n::Alphabets do
       S s T t U u V v W w X x Y y Z z
     }
   end
+  
+  describe '#be' do
+    subject { alphabets.be }
+    include_examples 'alphabet', %w{
+      А а Б б В в Г г Д д Е е Ё ё Ж ж З з І і Й й К к Л л М м Н н О о П п Р р С с Т т 
+      У у Ў ў Ф ф Х х Ц ц Ч ч Ш ш Ы ы Ь ь Э э Ю ю Я я ’
+    }
+  end
 end

@@ -231,5 +231,18 @@ module I18n
       }.to_set
     end
     
+    def be
+      # http://en.wikipedia.org/wiki/Belarusian_alphabet#Letters
+      %W{
+        \u0410 \u0430 \u0411 \u0431 \u0412 \u0432 \u0413 \u0433 \u0414 \u0434 
+        \u0415 \u0435 \u0401 \u0451 \u0416 \u0436 \u0417 \u0437 \u0406 \u0456 
+        \u0419 \u0439 \u041A \u043A \u041B \u043B \u041C \u043C \u041D \u043D 
+        \u041E \u043E \u041F \u043F \u0420 \u0440 \u0421 \u0441 \u0422 \u0442 
+        \u0423 \u0443 \u040E \u045E \u0424 \u0444 \u0425 \u0445 \u0426 \u0446 
+        \u0427 \u0447 \u0428 \u0448 \u042B \u044B \u042C \u044C \u042D \u044D 
+        \u042E \u044E \u042F \u044F \u2019
+      }.to_set
+    end
+    
   end
 end
