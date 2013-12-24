@@ -193,7 +193,6 @@ module I18n
     end
     
     def bm
-      # Bambara Alphabet. In Fact Sheet. Retrieved 10:48 PM February 10th, 2008
       # http://cm.kasahorow.org/alphabets/mande/bambara
       %W{
         \u0061 \u0041 \u0062 \u0042 \u0063 \u0043 \u0064 \u0044 \u0065 \u0045 
@@ -202,6 +201,21 @@ module I18n
         \u014A \u006F \u004F \u00F2 \u00D2 \u0070 \u0050 \u0072 \u0052 \u0074 
         \u0054 \u0075 \u0055 \u0076 \u0056 \u0077 \u0057 \u0078 \u0058 \u0079 
         \u0059 \u007A \u005A
+      }.to_set
+    end
+    
+    def ba
+      # http://en.wikipedia.org/wiki/Bashkir_language#Orthography
+      %W{
+        \u0410 \u0430 \u0411 \u0431 \u0412 \u0432 \u0413 \u0433 \u0492 \u0493 
+        \u0414 \u0434 \u0498 \u0499 \u0415 \u0435 \u0401 \u0451 \u0416 \u0436 
+        \u0417 \u0437 \u0418 \u0438 \u0419 \u0439 \u041A \u043A \u04A0 \u04A1 
+        \u041B \u043B \u041C \u043C \u041D \u043D \u04A2 \u04A3 \u041E \u043E 
+        \u04E8 \u04E9 \u041F \u043F \u0420 \u0440 \u0421 \u0441 \u04AA \u04AB 
+        \u0422 \u0442 \u0423 \u0443 \u04AE \u04AF \u0424 \u0444 \u0425 \u0445 
+        \u04BA \u04BB \u0426 \u0446 \u0427 \u0447 \u0428 \u0448 \u0429 \u0449 
+        \u042A \u044A \u042B \u044B \u042C \u044C \u042D \u044D \u04D8 \u04D9 
+        \u042E \u044E \u042F \u044F
       }.to_set
     end
     

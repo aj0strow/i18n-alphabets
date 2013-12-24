@@ -178,4 +178,13 @@ describe I18n::Alphabets do
       t T u U v V w W x X y Y z Z
     }
   end
+  
+  describe '#ba' do
+    subject { alphabets.ba }
+    include_examples 'alphabet', %W{
+      А а Б б В в Г г Ғ ғ Д д Ҙ ҙ Е е Ё ё Ж ж З з И и Й й К к Ҡ ҡ Л л М м Н н Ң ң О о 
+      Ө ө П п Р р С с Ҫ ҫ Т т У у Ү ү Ф ф Х х Һ һ Ц ц Ч ч Ш ш Щ щ Ъ ъ Ы ы Ь ь Э э Ә ә 
+      Ю ю Я я
+    }
+  end
 end
