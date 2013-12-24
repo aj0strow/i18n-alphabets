@@ -5,7 +5,7 @@ describe I18n::Alphabets do
     Object.new.extend(I18n::Alphabets)
   end
   
-  shared_examples 'alphabet' do |chars|
+  shared_examples :alphabet do |chars|
     chars.each do |char|
       specify char do
         expect(subject.include? char).to eq(true)
@@ -15,7 +15,7 @@ describe I18n::Alphabets do
   
   describe '#ab' do
     subject { alphabets.ab }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u0410 \u0430 \u0411 \u0431 \u0412 \u0432 \u0413 \u0433 \u0413 \u0433 
       \u0413 \u0433 \u0494 \u0495 \u0494 \u0495 \u0494 \u0495 \u0414 \u0434 
       \u0414 \u0434 \u0415 \u0435 \u0416 \u0436 \u0416 \u0436 \u0416 \u0436 
@@ -34,7 +34,7 @@ describe I18n::Alphabets do
   
   describe '#aa' do
     subject { alphabets.aa }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a	B b	T t	S s	E e	C c	K k	X x	I i	D d	Q q
       R r	F f	G g	O o	L l	M m	N n	U u	W w	H h	Y y
     }
@@ -42,7 +42,7 @@ describe I18n::Alphabets do
   
   describe '#af' do
     subject { alphabets.af }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a	B b	C c	D d	E e	F f	G g	H h	I i
       J j	K k	L l	M m	N n	O o	P p	Q q	R r
       S s	T t	U u	V v	W w	X x	Y y	Z z	 
@@ -51,7 +51,7 @@ describe I18n::Alphabets do
   
   describe '#ak' do
     subject { alphabets.ak }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a	B b	C c	D d	E e	F f	G g	H h	I i	J j	K k	L l	M m
       N n	O o	P p	Ɛ ɛ	R r	S s	T t	U u	V v	W w	Ɔ ɔ	Y y	Z z
     } 
@@ -59,7 +59,7 @@ describe I18n::Alphabets do
   
   describe '#sq' do
     subject { alphabets.sq }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A B C Ç D E Ë F G H h I J j K L l M N O P Q R r S
       T U V X Y Z
     }
@@ -67,7 +67,7 @@ describe I18n::Alphabets do
   
   describe '#am' do
     subject { alphabets.am }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u1200 \u1201 \u1202 \u1203 \u1204 \u1205 \u1206 \u1207 \u1208 \u1209 \u120A \u120B \u120C \u120D \u120E 
       \u120F \u1210 \u1211 \u1212 \u1213 \u1214 \u1215 \u1216 \u1217 \u1218 \u1219 \u121A \u121B \u121C \u121D 
       \u121E \u121F \u1220 \u1221 \u1222 \u1223 \u1224 \u1225 \u1226 \u1227 \u1228 \u1229 \u122A \u122B \u122C 
@@ -99,7 +99,7 @@ describe I18n::Alphabets do
   
   describe '#ar' do
     subject { alphabets.ar }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u0627 \u0628 \u062A \u062B \u062C \u062D \u062E \u062F \u0630 \u0631 
       \u0632 \u0633 \u0634 \u0635 \u0636 \u0637 \u0638 \u0639 \u063A \u0641 
       \u0642 \u0643 \u0644 \u0645 \u0646 \u0647 \u0648 \u064A
@@ -108,7 +108,7 @@ describe I18n::Alphabets do
   
   describe '#an' do
     subject { alphabets.an }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a B b C c D d E e F f G g H h I i J j K k L l M m N n Ñ ñ
       O o P p Q q R r S s T t U u V v W w X x Y y Z z
     }
@@ -116,7 +116,7 @@ describe I18n::Alphabets do
   
   describe '#hy' do
     subject { alphabets.hy }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       Ա	Բ	Գ	Դ	Ե	Զ	Է	Ը	Թ	Ժ	Ի	Լ	Խ	Ծ	Կ
       Հ	Ձ	Ղ	Ճ	Մ	Յ	Ն	Շ	Ո	Չ	Պ	Ջ	Ռ	Ս	Վ	Տ
       Ր	Ց	Ւ	Փ	Ք	Օ	Ֆ	ՙ	՚	՛	՜	՝	՞	՟
@@ -128,7 +128,7 @@ describe I18n::Alphabets do
   
   describe '#as' do
     subject { alphabets.as }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u0995 \u0996 \u0997 \u0998 \u0999 \u099A \u099B \u099C \u099D \u099E 
       \u099F \u09A0 \u09A1 \u09A2 \u09A3 \u09A4 \u09A5 \u09A6 \u09A7 \u09A8 
       \u09AA \u09AB \u09AC \u09AD \u09AE \u09AF \u09F0 \u09B2 \u09F1 \u09B6 
@@ -138,7 +138,7 @@ describe I18n::Alphabets do
   
   describe '#av' do
     subject { alphabets.av }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       А а Б б В в Г г ъ ь I Д д Е е Ё ё Ж ж З з И и Й й К к Л л М м Н н О о 
       П п Р р С с Т т У у Ф ф Х х Ц ц Ч ч Ш ш Щ щ Ъ Ы ы Ь Э э Ю ю Я я
     }
@@ -146,7 +146,7 @@ describe I18n::Alphabets do
   
   describe '#ae' do
     subject { alphabets.ae }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u10B00 \u10B01 \u10B02 \u10B03 \u10B04 \u10B05 \u10B06 \u10B07 \u10B08 \u10B09 \u10B0A 
       \u10B0B \u10B0C \u10B0D \u10B0E \u10B0F \u10B10 \u10B11 \u10B12 \u10B13 \u10B14 \u10B15 
       \u10B16 \u10B17 \u10B18 \u10B19 \u10B1A \u10B1B \u10B1C \u10B1D \u10B1E \u10B1F \u10B20 
@@ -158,14 +158,14 @@ describe I18n::Alphabets do
   
   describe '#ay' do
     subject { alphabets.ay }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       a i u ä ï ü c h j k l m n ñ p q r s t w x y
     }
   end
   
   describe '#az' do
     subject { alphabets.az }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a B b C c Ç ç D d E e Ə ə F f G g Ğ ğ H h X x I ı İ i J j K k Q q L l M m 
       N n O o Ö ö P p R r S s Ş ş T t U u Ü ü V v Y y Z z
     }
@@ -173,7 +173,7 @@ describe I18n::Alphabets do
   
   describe '#bm' do
     subject { alphabets.bm }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       a A b B c C d D e E è f F g G h H i I j J k K l L m M n N ŋ Ŋ o O ò Ò p P r R 
       t T u U v V w W x X y Y z Z
     }
@@ -181,7 +181,7 @@ describe I18n::Alphabets do
   
   describe '#ba' do
     subject { alphabets.ba }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       А а Б б В в Г г Ғ ғ Д д Ҙ ҙ Е е Ё ё Ж ж З з И и Й й К к Ҡ ҡ Л л М м Н н Ң ң О о 
       Ө ө П п Р р С с Ҫ ҫ Т т У у Ү ү Ф ф Х х Һ һ Ц ц Ч ч Ш ш Щ щ Ъ ъ Ы ы Ь ь Э э Ә ә 
       Ю ю Я я
@@ -190,7 +190,7 @@ describe I18n::Alphabets do
   
   describe '#eu' do
     subject { alphabets.eu }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       A a B b C c Ç ç D d E e F f G g H h I i J j K k L l M m N n Ñ ñ O o P p Q q R r 
       S s T t U u V v W w X x Y y Z z
     }
@@ -198,7 +198,7 @@ describe I18n::Alphabets do
   
   describe '#be' do
     subject { alphabets.be }
-    include_examples 'alphabet', %w{
+    include_examples :alphabet, %w{
       А а Б б В в Г г Д д Е е Ё ё Ж ж З з І і Й й К к Л л М м Н н О о П п Р р С с Т т 
       У у Ў ў Ф ф Х х Ц ц Ч ч Ш ш Ы ы Ь ь Э э Ю ю Я я ’
     }
@@ -206,7 +206,7 @@ describe I18n::Alphabets do
   
   describe '#bn' do
     subject { alphabets.bn }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u0981 \u0982 \u0983 \u0985 \u0986 \u0987 \u0988 \u0989 \u098A \u098B \u098C \u098F 
       \u0990 \u0993 \u0994 \u0995 \u0996 \u0997 \u0998 \u0999 \u099A \u099B \u099C \u099D 
       \u099E \u099F \u09A0 \u09A1 \u09A2 \u09A3 \u09A4 \u09A5 \u09A6 \u09A7 \u09A8 \u09AA 
@@ -220,13 +220,20 @@ describe I18n::Alphabets do
   
   describe '#bh' do
     subject { alphabets.bh }
-    include_examples 'alphabet', %W{
+    include_examples :alphabet, %W{
       \u11080 \u11081 \u11082 \u11083 \u11084 \u11085 \u11086 \u11087 \u11088 \u11089 \u1108A 
       \u1108B \u1108C \u1108D \u1108E \u1108F \u11090 \u11091 \u11092 \u11093 \u11094 \u11095 
       \u11096 \u11097 \u11098 \u11099 \u1109A \u1109B \u1109C \u1109D \u1109E \u1109F \u110A0 
       \u110A1 \u110A2 \u110A3 \u110A4 \u110A5 \u110A6 \u110A7 \u110A8 \u110A9 \u110AA \u110AB 
       \u110AC \u110AD \u110AE \u110AF \u110B0 \u110B1 \u110B2 \u110B3 \u110B4 \u110B5 \u110B6 
       \u110B7 \u110B8 \u110B9 \u110BA \u110BB \u110BC \u110BD \u110BE \u110BF \u110C0 \u110C1
+    }
+  end
+  
+  describe '#bi' do
+    subject { alphabets.bi }
+    include_examples :alphabet, %w{
+      A a B b E e F f H h I i J j K k L l M m N n G g O o P p R r S s T t U u V v W w Y y
     }
   end
 end

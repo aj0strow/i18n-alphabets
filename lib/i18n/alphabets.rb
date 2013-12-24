@@ -270,5 +270,15 @@ module I18n
       }.to_set
     end
     
+    def bi
+      # http://www.omniglot.com/writing/bislama.php
+      %W{
+        \u0041 \u0061 \u0042 \u0062 \u0045 \u0065 \u0046 \u0066 \u0048 \u0068 \u0049 \u0069 
+        \u004A \u006A \u004B \u006B \u004C \u006C \u004D \u006D \u004E \u006E \u0047 \u0067 
+        \u004F \u006F \u0050 \u0070 \u0052 \u0072 \u0053 \u0073 \u0054 \u0074 \u0055 \u0075 
+        \u0056 \u0076 \u0057 \u0077 \u0059 \u0079
+      }.to_set
+    end
+    
   end
 end
