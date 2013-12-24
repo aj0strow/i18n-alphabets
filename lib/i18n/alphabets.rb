@@ -280,5 +280,14 @@ module I18n
       }.to_set
     end
     
+    def bs
+      # http://mylanguages.org/bosnian_alphabet.php
+      %W{
+        \u0041 \u0042 \u0043 \u010C \u0106 \u0044 \u0110 \u0045 \u0046 \u0047 \u0048 \u0049 
+        \u004A \u004B \u004C \u004D \u004E \u004F \u0050 \u0052 \u0053 \u0160 \u0054 \u0055 
+        \u0056 \u005A \u017D
+      }.to_set
+    end
+    
   end
 end

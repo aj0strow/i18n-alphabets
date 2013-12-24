@@ -236,4 +236,11 @@ describe I18n::Alphabets do
       A a B b E e F f H h I i J j K k L l M m N n G g O o P p R r S s T t U u V v W w Y y
     }
   end
+  
+  describe '#bs' do
+    subject { alphabets.bs }
+    include_examples :alphabet, %w{
+      A B C Č Ć D Đ E F G H I J K L M N O P R S Š T U V Z Ž
+    }
+  end
 end
