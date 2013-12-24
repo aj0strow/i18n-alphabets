@@ -243,4 +243,12 @@ describe I18n::Alphabets do
       A B C Č Ć D Đ E F G H I J K L M N O P R S Š T U V Z Ž
     }
   end
+  
+  describe '#br' do
+    subject { alphabets.br }
+    include_examples :alphabet, %w{
+      A â a e o u B C h c w D E ê i ü F ’ f G g n H I l J K L M N ñ v O ô ù P R S s 
+      k t T U r V W Y Z z
+    }
+  end
 end

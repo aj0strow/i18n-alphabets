@@ -289,5 +289,16 @@ module I18n
       }.to_set
     end
     
+    def br
+      # http://en.wikipedia.org/wiki/Breton_language#Pronunciation_of_the_Breton_alphabet
+      %W{
+        \u0041 \u00E2 \u0061 \u0065 \u006F \u0075 \u0042 \u0043 \u0068 \u0063 \u0077 \u0044 
+        \u0045 \u00EA \u0069 \u00FC \u0046 \u2019 \u0066 \u0047 \u0067 \u006E \u0048 \u0049 
+        \u006C \u004A \u004B \u004C \u004D \u004E \u00F1 \u0076 \u004F \u00F4 \u00F9 \u0050 
+        \u0052 \u0053 \u0073 \u006B \u0074 \u0054 \u0055 \u0072 \u0056 \u0057 \u0059 \u005A 
+        \u007A
+      }.to_set
+    end
+    
   end
 end
