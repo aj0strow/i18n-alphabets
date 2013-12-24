@@ -192,5 +192,18 @@ module I18n
       }.to_set
     end
     
+    def bm
+      # Bambara Alphabet. In Fact Sheet. Retrieved 10:48 PM February 10th, 2008
+      # http://cm.kasahorow.org/alphabets/mande/bambara
+      %W{
+        \u0061 \u0041 \u0062 \u0042 \u0063 \u0043 \u0064 \u0044 \u0065 \u0045 
+        \u00E8 \u0066 \u0046 \u0067 \u0047 \u0068 \u0048 \u0069 \u0049 \u006A 
+        \u004A \u006B \u004B \u006C \u004C \u006D \u004D \u006E \u004E \u014B 
+        \u014A \u006F \u004F \u00F2 \u00D2 \u0070 \u0050 \u0072 \u0052 \u0074 
+        \u0054 \u0075 \u0055 \u0076 \u0056 \u0077 \u0057 \u0078 \u0058 \u0079 
+        \u0059 \u007A \u005A
+      }.to_set
+    end
+    
   end
 end

@@ -170,4 +170,12 @@ describe I18n::Alphabets do
       N n O o Ö ö P p R r S s Ş ş T t U u Ü ü V v Y y Z z
     }
   end
+  
+  describe '#bm' do
+    subject { alphabets.bm }
+    include_examples 'alphabet', %W{
+      a A b B c C d D e E è f F g G h H i I j J k K l L m M n N ŋ Ŋ o O ò Ò p P r R 
+      t T u U v V w W x X y Y z Z
+    }
+  end
 end
