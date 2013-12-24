@@ -217,4 +217,16 @@ describe I18n::Alphabets do
       \u09F4 \u09F5 \u09F6 \u09F7 \u09F8 \u09F9 \u09FA \u09FB
     }
   end
+  
+  describe '#bh' do
+    subject { alphabets.bh }
+    include_examples 'alphabet', %W{
+      \u11080 \u11081 \u11082 \u11083 \u11084 \u11085 \u11086 \u11087 \u11088 \u11089 \u1108A 
+      \u1108B \u1108C \u1108D \u1108E \u1108F \u11090 \u11091 \u11092 \u11093 \u11094 \u11095 
+      \u11096 \u11097 \u11098 \u11099 \u1109A \u1109B \u1109C \u1109D \u1109E \u1109F \u110A0 
+      \u110A1 \u110A2 \u110A3 \u110A4 \u110A5 \u110A6 \u110A7 \u110A8 \u110A9 \u110AA \u110AB 
+      \u110AC \u110AD \u110AE \u110AF \u110B0 \u110B1 \u110B2 \u110B3 \u110B4 \u110B5 \u110B6 
+      \u110B7 \u110B8 \u110B9 \u110BA \u110BB \u110BC \u110BD \u110BE \u110BF \u110C0 \u110C1
+    }
+  end
 end
