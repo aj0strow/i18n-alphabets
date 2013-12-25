@@ -289,4 +289,11 @@ describe I18n::Alphabets do
       À à É é È è Í í Ï ï Ó ó Ò ò Ú ú Ü ü Ç ç
     }
   end
+  
+  describe '#ch' do
+    subject { alphabets.ch }
+    include_examples :alphabet, %w{
+      A B C D E F G H I K L M N O P R S T U Y a b c d e f g h i k l m n o p r s t u y Å Ñ å ñ
+    }
+  end
 end
