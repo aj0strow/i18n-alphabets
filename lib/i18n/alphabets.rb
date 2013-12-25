@@ -368,5 +368,19 @@ module I18n
       }.to_set
     end
     
+    def ce
+      # http://en.wikipedia.org/wiki/Chechen_language#Alphabets
+      %W{
+        \u0041 \u0042 \u0043 \u0044 \u0045 \u0046 \u0047 \u0048 \u0049 \u004A 
+        \u004B \u004C \u004D \u004E \u004F \u0050 \u0051 \u0052 \u0053 \u0054 
+        \u0055 \u0056 \u0058 \u0059 \u005A \u0061 \u0062 \u0063 \u0064 \u0065 
+        \u0066 \u0067 \u0068 \u0069 \u006A \u006B \u006C \u006D \u006E \u006F 
+        \u0070 \u0071 \u0072 \u0073 \u0074 \u0075 \u0076 \u0078 \u0079 \u007A 
+        \u00C4 \u00C7 \u00D6 \u00DC \u00E4 \u00E7 \u00F6 \u00FC \u010A \u010B 
+        \u0120 \u0121 \u015E \u015F \u018F \u01B5 \u01B6 \u0259 \u0307 \u1E8A 
+        \u1E8B \uA790 \uA791
+      }.to_set
+    end
+    
   end
 end

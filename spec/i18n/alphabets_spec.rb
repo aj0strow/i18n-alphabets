@@ -296,4 +296,12 @@ describe I18n::Alphabets do
       A B C D E F G H I K L M N O P R S T U Y a b c d e f g h i k l m n o p r s t u y Å Ñ å ñ
     }
   end
+  
+  describe '#ce' do
+    subject { alphabets.ce }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P Q R S T U V X Y Z a b c d e f g h i j k l m n o p q r s 
+      t u v x y z Ä Ç Ö Ü ä ç ö ü Ċ ċ Ġ ġ Ş ş Ə Ƶ ƶ ə ̇ Ẋ ẋ Ꞑ ꞑ
+    }
+  end
 end
