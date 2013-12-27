@@ -341,4 +341,17 @@ describe I18n::Alphabets do
       p q r s t u v z À È Ì Ï Ò Ù Ü à è ì ï ò ù
     }
   end
+  
+  describe '#cr' do
+    subject { alphabets.cr }
+    include_examples :alphabet, %w{}
+  end
+  
+  describe '#hr' do
+    subject { alphabets.hr }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P R S T U V Z a b c d e f g h i j k l m n o 
+      p r s t u v z Ć ć Č č Đ đ Š š Ž ž
+    }
+  end
 end
