@@ -354,4 +354,13 @@ describe I18n::Alphabets do
       p r s t u v z Ć ć Č č Đ đ Š š Ž ž
     }
   end
+  
+  describe '#cs' do
+    subject { alphabets.cs }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k 
+      l m n o p q r s t u v w x y z Á É Í Ó Ú Ý á é í ó ú ý Č č Ď ď Ě ě Ň ň Ř ř 
+      Š š Ť ť Ů ů Ž ž
+    }
+  end
 end
