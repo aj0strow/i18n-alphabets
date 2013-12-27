@@ -304,4 +304,25 @@ describe I18n::Alphabets do
       t u v x y z Ä Ç Ö Ü ä ç ö ü Ċ ċ Ġ ġ Ş ş Ə Ƶ ƶ ə ̇ Ẋ ẋ Ꞑ ꞑ
     }
   end
+  
+  describe '#ny' do
+    subject { alphabets.ny }
+    include_examples :alphabet, %w{}
+  end
+  
+  describe '#zh' do
+    subject { alphabets.zh }
+    include_examples :alphabet, %w{}
+  end
+  
+  describe '#cv' do
+    subject { alphabets.cv }
+    include_examples :alphabet, %w{
+      А а	Ӑ ӑ	Б б	В в	Г г	Д д	Е е	Ё ё
+      Ӗ ӗ	Ж ж	З з	И и	Й й	К к	Л л	М м
+      Н н	О о	П п	Р р	С с	Ҫ ҫ	Т т	У у
+      Ӳ ӳ	Ф ф	Х х	Ц ц	Ч ч	Ш ш	Щ щ	Ъ ъ
+      Ы ы	Ь ь	Э э	Ю ю	Я я	
+    }
+  end
 end
