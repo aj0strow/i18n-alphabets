@@ -333,4 +333,12 @@ describe I18n::Alphabets do
       m n o p r s t u v w x y
     }
   end
+  
+  describe '#co' do
+    subject { alphabets.co }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J L M N O P Q R S T U V Z a b c d e f g h i j l m n o 
+      p q r s t u v z À È Ì Ï Ò Ù Ü à è ì ï ò ù
+    }
+  end
 end

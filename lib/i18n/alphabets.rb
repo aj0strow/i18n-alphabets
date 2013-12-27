@@ -416,5 +416,17 @@ module I18n
       }.to_set
     end
     
+    def co
+      # http://en.wikipedia.org/wiki/Corsican_alphabet#Basic_diacritics
+      %W{
+        \u0041 \u0042 \u0043 \u0044 \u0045 \u0046 \u0047 \u0048 \u0049 \u004A 
+        \u004C \u004D \u004E \u004F \u0050 \u0051 \u0052 \u0053 \u0054 \u0055 
+        \u0056 \u005A \u0061 \u0062 \u0063 \u0064 \u0065 \u0066 \u0067 \u0068 
+        \u0069 \u006A \u006C \u006D \u006E \u006F \u0070 \u0071 \u0072 \u0073 
+        \u0074 \u0075 \u0076 \u007A \u00C0 \u00C8 \u00CC \u00CF \u00D2 \u00D9 
+        \u00DC \u00E0 \u00E8 \u00EC \u00EF \u00F2 \u00F9
+      }.to_set
+    end
+    
   end
 end
