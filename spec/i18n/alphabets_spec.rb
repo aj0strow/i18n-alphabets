@@ -402,4 +402,12 @@ describe I18n::Alphabets do
       o p q r s t u v w x y z
     }
   end
+  
+  describe '#eo' do
+    subject { alphabets.eo }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P R S T U V Z a b c d e f g h i j k l m n o p r s 
+      t u v z Ĉ ĉ Ĝ ĝ Ĥ ĥ Ĵ ĵ Ŝ ŝ Ŭ ŭ
+    }
+  end
 end

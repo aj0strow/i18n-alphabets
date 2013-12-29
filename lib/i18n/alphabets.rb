@@ -515,5 +515,17 @@ module I18n
       }.to_set
     end
     
+    def eo
+      # http://en.wikipedia.org/wiki/Esperanto_orthography
+      %W{
+        \u0041 \u0042 \u0043 \u0044 \u0045 \u0046 \u0047 \u0048 \u0049 \u004A 
+        \u004B \u004C \u004D \u004E \u004F \u0050 \u0052 \u0053 \u0054 \u0055 
+        \u0056 \u005A \u0061 \u0062 \u0063 \u0064 \u0065 \u0066 \u0067 \u0068 
+        \u0069 \u006A \u006B \u006C \u006D \u006E \u006F \u0070 \u0072 \u0073 
+        \u0074 \u0075 \u0076 \u007A \u0108 \u0109 \u011C \u011D \u0124 \u0125 
+        \u0134 \u0135 \u015C \u015D \u016C \u016D
+      }.to_set
+    end
+    
   end
 end
