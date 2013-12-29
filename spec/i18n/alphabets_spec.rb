@@ -381,4 +381,12 @@ describe I18n::Alphabets do
       \u07AA \u07AB \u07AC \u07AD \u07AE \u07AF \u07B0 \u07B1
     }
   end
+  
+  describe '#nl' do
+    subject { alphabets.nl }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n 
+      o p q r s t u v w x y z
+    }
+  end
 end
