@@ -389,4 +389,9 @@ describe I18n::Alphabets do
       o p q r s t u v w x y z
     }
   end
+  
+  describe '#dz' do
+    subject { alphabets.dz }
+    include_examples :alphabet, %w{}
+  end
 end

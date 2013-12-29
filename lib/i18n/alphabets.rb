@@ -383,12 +383,13 @@ module I18n
     end
     
     def ny
-      raise 'Must find the unicode for W with the ^ on top'
+      # Must find the unicode for W with the ^ on top
+      raise 'Not Implemented'
     end
     
     def zh
       # http://stackoverflow.com/questions/1366068/whats-the-complete-range-for-chinese-characters-in-unicode
-      raise 'too many chinese characters need to rewrite package'
+      raise 'Not Implemented'
     end
     
     def cv
@@ -431,7 +432,7 @@ module I18n
     def cr
       # http://en.wikipedia.org/wiki/Unified_Canadian_Aboriginal_Syllabics_(Unicode_block)
       # http://www.omniglot.com/writing/cree.htm
-      raise 'come back to this'
+      raise 'Not Implemented'
     end
     
     def hr
@@ -494,6 +495,12 @@ module I18n
         \u006F \u0070 \u0071 \u0072 \u0073 \u0074 \u0075 \u0076 \u0077 \u0078 
         \u0079 \u007A
       }.to_set
+    end
+    
+    def dz
+      # http://en.wikipedia.org/wiki/Dzongkha_language
+      # http://en.wikipedia.org/wiki/Tibetan_script#Unicode
+      raise 'Not Implemented'
     end
     
   end
