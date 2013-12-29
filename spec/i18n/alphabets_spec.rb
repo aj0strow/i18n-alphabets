@@ -394,4 +394,12 @@ describe I18n::Alphabets do
     subject { alphabets.dz }
     include_examples :alphabet, %w{}
   end
+  
+  describe '#en' do
+    subject { alphabets.en }
+    include_examples :alphabet, %w{
+      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n 
+      o p q r s t u v w x y z
+    }
+  end
 end
